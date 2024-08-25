@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TimeShifter</title>
+    <link rel="stylesheet" href="./popup.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="main-title">⌚ TimeShifter</h1>
+      <form id="convert-form">
+        <label for="datetime">Date & Time:</label>
+        <input type="datetime-local" id="datetime" name="datetime" required />
+
+        <label for="from-tz">From Timezone:</label>
+        <select id="from-tz" name="from-tz" required></select>        
+
+        <label for="to-tz">To Timezone:</label>
+        <select id="to-tz" name="to-tz" required></select>
+
+        <button type="submit">Convert</button>
+      </form>
+
+      <div id="result" class="hidden">
+        <p class="converted-time-title">Converted Time: </p>
+        <span id="converted-time"></span>
+        </br>
+        <a id="calendar-link" href="#" target="_blank"
+          > 🗓️ Add to Google Calendar</a
+        >
+      </div>
+    </div>
+    <script type="module" src="./popup.js"></script>
+  </body>
+</html>

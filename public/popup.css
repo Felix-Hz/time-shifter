@@ -1,0 +1,129 @@
+body {
+  font-family: "Inter", Arial, sans-serif;
+  padding: 10;
+  margin: 10;
+  border-radius: 10px;
+  background-color: #161b22;
+  color: #c9d1d9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 80vh;
+}
+
+.container {
+  background-color: #0d1117;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  width: 100%;
+  max-width: 360px;
+}
+
+.main-title {
+  font-size: 25px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #c9d1d9;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 8px;
+  font-weight: 500;
+  color: #e6e6e6;
+}
+
+input,
+select,
+button {
+  border: 1px solid #30363d;
+  border-radius: 4px;
+  padding: 10px;
+  font-size: 14px;
+  background-color: #161b22;
+  color: #c9d1d9;
+}
+
+input,
+select {
+  margin-bottom: 12px;
+  font-family: "Fira Code", "Source Code Pro", "Inconsolata", monospace;
+}
+
+select {
+  border: 1px solid #30363d;
+  border-radius: 4px;
+  padding: 10px;
+  font-size: 14px;
+  background-color: #0d1117;
+  color: #c9d1d9;
+  margin-bottom: 12px;
+  max-width: 100%;
+  box-sizing: border-box;
+  appearance: none;
+  position: relative;
+  z-index: 1;
+}
+
+select:focus {
+  outline: none;
+  border-color: #58a6ff;
+  box-shadow: 0 0 5px rgba(88, 166, 255, 0.5);
+}
+
+select option {
+  padding: 8px;
+}
+
+select {
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+button {
+  background-color: #238636;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+button:hover {
+  background-color: #2ea043;
+}
+
+::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+}
+
+#result {
+  margin-top: 20px;
+}
+
+#result.hidden {
+  display: none;
+}
+
+.converted-time-title {
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #c9d1d9;
+}
+
+#calendar-link {
+  display: block;
+  margin-top: 10px;
+  color: #58a6ff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+#calendar-link:hover {
+  text-decoration: underline;
+}

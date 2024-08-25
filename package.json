@@ -1,0 +1,19 @@
+{
+  "name": "time-shifter",
+  "version": "1.0.0",
+  "description": "Convert times and create Google Calendar events.",
+  "main": "vite.config.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^3.0.0"
+  },
+  "author": "dj4ngo",
+  "license": "ISC",
+  "dependencies": {
+    "luxon": "^3.5.0"
+  }
+}
